@@ -1,7 +1,6 @@
 //
 //  BasicTest.c
 //  ruanjiankaifa
-// fflush在 scanf之前执行 fflush(stdout) 在打开文件之前执行 fflush(stdin)
 //
 
 #include "BasicTest.h"
@@ -36,6 +35,8 @@ void scanfTest(){
     int n,range;
     while (1) {
         printf("请输入元素个数n 以及范围range:\t\n");
+        
+        //fflush在 scanf之前执行 fflush(stdout) 在打开文件之前执行 fflush(stdin)
         fflush(stdout);
         scanf("%d%d",&n,&range);
         if (n>0&&n<1001) {
