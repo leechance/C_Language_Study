@@ -80,8 +80,8 @@ int main(int argc, const char * argv[]) {
     //Faibonaqi();
     //jiecheng();
     //a1PlusA2toA3();
-    JinZiTa4();
-    
+   // JinZiTa4();
+    JuzhenReverse();
     
     
     

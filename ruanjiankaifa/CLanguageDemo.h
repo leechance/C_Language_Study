@@ -160,5 +160,13 @@ void JinZiTa3(void);
 void JinZiTa4(void);
 
 
+//41.编写函数将一个n*n矩阵转置，例如：（****）
+//1 2 3 4     1 5 3 4
+//5 6 7 8 ->  2 6 2 7
+//3 2 5 9     3 7 5 2
+//4 7 2 3     4 8 9 3
+void JuzhenReverse(void);
+
+
 
 #endif 
