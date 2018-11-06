@@ -77,11 +77,11 @@ int main(int argc, const char * argv[]) {
   //  basicTest();
     //examTest();
     
-    //Faibonaqi();
+    Faibonaqi2();
     //jiecheng();
     //a1PlusA2toA3();
    // JinZiTa4();
-    JuzhenReverse();
+   // JuzhenReverse();
     
     
     

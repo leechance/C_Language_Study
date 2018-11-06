@@ -24,6 +24,22 @@ void Faibonaqi(void){
     putchar('\n');
 }
 
+
+int fabonaci(int n)
+{
+    if (n==1 || n==2) {
+        return 1;
+    }
+    return fabonaci(n-1)+fabonaci(n-2);
+}
+
+void Faibonaqi2(void){
+        for (int i=1; i<=50; i++) {
+            printf("%d ",fabonaci(i));
+        }
+        printf("\n");
+}
+
 void jiecheng(void){
     int Sn=0;
     int n;
