@@ -5,6 +5,7 @@
 #include "Exam.h"
 #include "CLanguageDemo.h"
 #include "StringTest.h"
+#include "PointerTest.h"
 
 //文件
 FILE* fp;
@@ -77,11 +78,12 @@ int main(int argc, const char * argv[]) {
   //  basicTest();
     //examTest();
     
-    Faibonaqi2();
+    //Faibonaqi2();
     //jiecheng();
     //a1PlusA2toA3();
    // JinZiTa4();
    // JuzhenReverse();
+    pointerBasicTest();
     
     
     

@@ -12,6 +12,7 @@
 		4C4F712E218FF8B700838473 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712D218FF8B700838473 /* Exam.c */; };
 		4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */; };
 		4CE0EB602191210D008CF8BE /* StringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB5F2191210D008CF8BE /* StringTest.c */; };
+		4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6221913281008CF8BE /* PointerTest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLanguageDemo.c; sourceTree = "<group>"; };
 		4CE0EB5E2191210D008CF8BE /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
 		4CE0EB5F2191210D008CF8BE /* StringTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StringTest.c; sourceTree = "<group>"; };
+		4CE0EB6121913281008CF8BE /* PointerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerTest.h; sourceTree = "<group>"; };
+		4CE0EB6221913281008CF8BE /* PointerTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PointerTest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				4C4F712D218FF8B700838473 /* Exam.c */,
 				4CE0EB5E2191210D008CF8BE /* StringTest.h */,
 				4CE0EB5F2191210D008CF8BE /* StringTest.c */,
+				4CE0EB6121913281008CF8BE /* PointerTest.h */,
+				4CE0EB6221913281008CF8BE /* PointerTest.c */,
 				4C4F7128218FE75C00838473 /* out.txt */,
 			);
 			path = ruanjiankaifa;
@@ -145,6 +150,7 @@
 				4C4F712E218FF8B700838473 /* Exam.c in Sources */,
 				4CE0EB602191210D008CF8BE /* StringTest.c in Sources */,
 				4C4F7122218FD63700838473 /* main.c in Sources */,
+				4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
