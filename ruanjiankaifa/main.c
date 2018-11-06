@@ -4,6 +4,7 @@
 #include "BasicTest.h"
 #include "Exam.h"
 #include "CLanguageDemo.h"
+#include "StringTest.h"
 
 //文件
 FILE* fp;
@@ -78,8 +79,8 @@ int main(int argc, const char * argv[]) {
     
     //Faibonaqi();
     //jiecheng();
-    a1PlusA2toA3();
-    
+    //a1PlusA2toA3();
+    JinZiTa4();
     
     
     

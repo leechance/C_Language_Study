@@ -91,7 +91,73 @@ void jiecheng(void);
 //思路：不使用数组的情况下，采用临时变量
 void a1PlusA2toA3(void);
 
+// 输入一个大写字母，如F
+//\
+//比如：
+//\
+//输入:F
+//\
+//输出：
+//
+//     A
+//    ABA
+//   ABCBA
+//  ABCDCBA
+// ABCDEDCBA
+//ABCDEFEDCBA
+void JinZiTa(void);
 
+
+//for循环）    输入一个大写字母，如 F，输出
+//\
+//比如：
+//\
+//输入：F
+//\
+//输出：
+//     F
+//    EFE
+//   DEFED
+//  CDEFEDC
+// BCDEFEDCB
+//ABCDEFEDCBA
+void JinZiTa2(void);
+
+//（for循环)输入一个大写字符，如F
+//\
+//比如：
+//
+//输入:F
+//
+//输出：
+//
+//FEDCBA
+// EDCBAB
+//  DCBABC
+//   CBABCD
+//    BABCDE
+//     ABCDEF
+void JinZiTa3(void);
+
+
+//输入一个大写字母，如F
+//比如：
+//输入:F
+//输出：
+//A
+//ABA
+//ABCBA
+//ABCDCBA
+//ABCDEDCBA
+//ABCDEFEDCBA
+//
+//输入:C
+//输出:
+//A
+//ABA
+//ABCBA
+
+void JinZiTa4(void);
 
 
 

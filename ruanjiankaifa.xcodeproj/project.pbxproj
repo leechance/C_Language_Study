@@ -11,6 +11,7 @@
 		4C4F712B218FF74F00838473 /* BasicTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712A218FF74F00838473 /* BasicTest.c */; };
 		4C4F712E218FF8B700838473 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712D218FF8B700838473 /* Exam.c */; };
 		4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */; };
+		4CE0EB602191210D008CF8BE /* StringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB5F2191210D008CF8BE /* StringTest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		4C4F712D218FF8B700838473 /* Exam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exam.c; sourceTree = "<group>"; };
 		4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLanguageDemo.h; sourceTree = "<group>"; };
 		4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLanguageDemo.c; sourceTree = "<group>"; };
+		4CE0EB5E2191210D008CF8BE /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
+		4CE0EB5F2191210D008CF8BE /* StringTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StringTest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				4C4F712A218FF74F00838473 /* BasicTest.c */,
 				4C4F712C218FF8B700838473 /* Exam.h */,
 				4C4F712D218FF8B700838473 /* Exam.c */,
+				4CE0EB5E2191210D008CF8BE /* StringTest.h */,
+				4CE0EB5F2191210D008CF8BE /* StringTest.c */,
 				4C4F7128218FE75C00838473 /* out.txt */,
 			);
 			path = ruanjiankaifa;
@@ -138,6 +143,7 @@
 				4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */,
 				4C4F712B218FF74F00838473 /* BasicTest.c in Sources */,
 				4C4F712E218FF8B700838473 /* Exam.c in Sources */,
+				4CE0EB602191210D008CF8BE /* StringTest.c in Sources */,
 				4C4F7122218FD63700838473 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -82,3 +82,78 @@ void a1PlusA2toA3(void){
     putchar('\n');
 
 }
+
+void JinZiTa(void){
+    char ch;
+    printf("输入字符：\n");
+    scanf("%c", &ch);
+    
+    for (int i=0; i < ch-'A'+1; i++) {
+        for (int j = ch-'A'-i; j>0; j--) {
+            printf(" ");
+        }
+        for (int j=0; j<=i; j++) {
+            printf("%c",'A'+j);
+        }
+        for (int j=i; j>0; j--) {
+            printf("%c",'A'+j-1);
+        }
+        printf("\n");
+    }
+}
+
+void JinZiTa2(void){
+    char ch;
+    printf("输入字符：\n");
+
+    scanf("%c", &ch);
+    
+    for (int i=0; i<ch-'A'+1; i++)
+    {
+        for (int j=0; j<ch-'A'-i; j++)
+        {
+            printf(" ");
+        }
+        for (int j=i; j>=0; j--) {
+            printf("%c",ch-j);
+        }
+        for (int j=0; j<i; j++) {
+            printf("%c",ch-1-j);
+        }
+        printf("\n");
+    }
+}
+void JinZiTa3(void){
+    char ch;
+    printf("输入字符：\n");
+
+    scanf("%c",&ch);
+    
+    for (int i=0; i<ch-'A'+1; i++) {
+        for (int j=i; j>0; j--) {
+            printf(" ");
+        }
+        for (int j=i; j<ch-'A'+1; j++) {
+            printf("%c", ch-j);
+        }
+        for (int j=0; j<i; j++) {
+            printf("%c",'A'+1+j);
+        }
+        printf("\n");
+    }
+}
+
+void JinZiTa4(void){
+    char ch;
+    printf("输入字符：\n");
+    scanf("%c",&ch);
+    for (int i=0; i<ch-'A'+1; i++) {
+        for (int j=0; j<=i; j++) {
+            printf("%c", 'A'+j);
+        }
+        for (int j=i; j>0; j--) {
+            printf("%c",'A'+j-1);
+        }
+        printf("\n");
+    }
+}
