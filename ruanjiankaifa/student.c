@@ -4,6 +4,7 @@
 //  用结构体构造对象
 //
 
+
 #include <stdio.h>
 #include"student.h"
 

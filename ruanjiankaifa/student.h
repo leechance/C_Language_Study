@@ -2,9 +2,8 @@
 //  student.h
 //用结构体构造对象
 //
-
-#ifndef student_demo1_student_h
-#define student_demo1_student_h
+#ifndef student_h
+#define student_h
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
@@ -47,7 +46,6 @@ bool setstudentAge( ST_STUDENT *c_self,unsigned int age);
 void printStudent(ST_STUDENT *c_self);
 //销毁
 void deallocStudent(ST_STUDENT *c_self);
-
 
 
 #endif

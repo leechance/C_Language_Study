@@ -7,6 +7,7 @@
 #include "StringTest.h"
 #include "PointerTest.h"
 #include "student.h"
+#include "studentHandle.h"
 
 //文件
 FILE* fp;
@@ -69,6 +70,7 @@ void examTest(void){
 }
 
 void studentTest(void);
+void studentHandleTest(void);
 
 int main(int argc, const char * argv[]) {
   
@@ -89,6 +91,7 @@ int main(int argc, const char * argv[]) {
    // JuzhenReverse();
    // pointerBasicTest();
     studentTest();
+    studentHandleTest();
     
     
     
@@ -114,4 +117,23 @@ void studentTest(void){
     setstudentAge(stu, 25);
     printStudent(stu);
     deallocStudent(stu);
+}
+void studentHandleTest(void){
+    
+    //这三个是不同的学生，在结构体的数组的索引是0，1，2
+    //以后对学生的操作只需要传入句柄，根据句柄索引出具体的学生，然后进行设置
+    studentHandle tempId=createStudent("范冰冰",1,33);
+    studentHandle tempId1=createStudent("范冰冰",1,33);
+    studentHandle tempId2=createStudent("范冰冰",1,33);
+    
+    printStudent2(tempId);
+    setStudentName2(tempId,"赵薇");
+    printStudent2(tempId);
+    setStudentSex2(tempId, 0);
+    printStudent2(tempId);
+    setStudentAge2(tempId, 35);
+    printStudent2(tempId);
+    releaseStudent2(tempId);
+    
+    
 }
