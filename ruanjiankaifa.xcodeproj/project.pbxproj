@@ -15,6 +15,8 @@
 		4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6221913281008CF8BE /* PointerTest.c */; };
 		4CE0EB692193CDC9008CF8BE /* student.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB682193CDC9008CF8BE /* student.c */; };
 		4CE0EB6C2193D46C008CF8BE /* studentHandle.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6B2193D46C008CF8BE /* studentHandle.c */; };
+		4CE0EB6F2193DAE7008CF8BE /* MemoryTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6E2193DAE7008CF8BE /* MemoryTest.c */; };
+		4CE0EB722193DBF3008CF8BE /* StaticTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB712193DBF3008CF8BE /* StaticTest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,10 @@
 		4CE0EB682193CDC9008CF8BE /* student.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = student.c; sourceTree = "<group>"; };
 		4CE0EB6A2193D46C008CF8BE /* studentHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studentHandle.h; sourceTree = "<group>"; };
 		4CE0EB6B2193D46C008CF8BE /* studentHandle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = studentHandle.c; sourceTree = "<group>"; };
+		4CE0EB6D2193DAE7008CF8BE /* MemoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTest.h; sourceTree = "<group>"; };
+		4CE0EB6E2193DAE7008CF8BE /* MemoryTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MemoryTest.c; sourceTree = "<group>"; };
+		4CE0EB702193DBF3008CF8BE /* StaticTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTest.h; sourceTree = "<group>"; };
+		4CE0EB712193DBF3008CF8BE /* StaticTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StaticTest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				4CE0EB5F2191210D008CF8BE /* StringTest.c */,
 				4CE0EB6121913281008CF8BE /* PointerTest.h */,
 				4CE0EB6221913281008CF8BE /* PointerTest.c */,
+				4CE0EB6D2193DAE7008CF8BE /* MemoryTest.h */,
+				4CE0EB6E2193DAE7008CF8BE /* MemoryTest.c */,
+				4CE0EB702193DBF3008CF8BE /* StaticTest.h */,
+				4CE0EB712193DBF3008CF8BE /* StaticTest.c */,
 				4C4F7128218FE75C00838473 /* out.txt */,
 			);
 			path = ruanjiankaifa;
@@ -155,10 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE0EB6F2193DAE7008CF8BE /* MemoryTest.c in Sources */,
 				4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */,
 				4C4F712B218FF74F00838473 /* BasicTest.c in Sources */,
 				4CE0EB692193CDC9008CF8BE /* student.c in Sources */,
 				4CE0EB6C2193D46C008CF8BE /* studentHandle.c in Sources */,
+				4CE0EB722193DBF3008CF8BE /* StaticTest.c in Sources */,
 				4C4F712E218FF8B700838473 /* Exam.c in Sources */,
 				4CE0EB602191210D008CF8BE /* StringTest.c in Sources */,
 				4C4F7122218FD63700838473 /* main.c in Sources */,
