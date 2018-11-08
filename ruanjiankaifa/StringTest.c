@@ -7,3 +7,123 @@
 //
 
 #include "StringTest.h"
+#include<stdlib.h>
+#include<ctype.h>
+#include <string.h>
+#include <stdlib.h>
+
+//字符串求长度
+unsigned long mystrlen(char *src)
+{
+    //字符串指针（p指向字符串的首地址）
+    // p++ 偏移的大小也就是p指向的数据类型占用的字节数,这里p指向的是单个字符，所以p++每次偏移一个字节0x0000000000007812 到 0x0000000000007813，
+    
+    
+    // pstr的地址变化 pstr其实就是字符串，
+    //(char *) $0 = 0x0000000100002f20 "abcdefgh"
+    //(char *) $1 = 0x0000000100002f21 "bcdefgh"
+    //(char *) $2 = 0x0000000100002f22 "cdefgh"
+    //.....
+    //(char *) $3 = 0x0000000100002f27 "h"
+    //(char *) $0 = 0x0000000100002f28 ""
+    // 判定条件可以 while(strcmp(pstr, ""))或者 while (*pstr!='\0')
+    
+    
+    char*pstr=src;
+    
+    unsigned long len=0;
+    while (*pstr!='\0') {
+        len++;
+        //指针偏移
+        pstr++;
+    }
+    return len;
+}
+
+char *mystrcpy(char *dest ,const char*src)//dest 指向的空间 要可以容纳src的空间
+{
+    char*pstr=dest;
+
+    //src本身字符串，同时指向字符串的首地址
+    
+    //通过遍历src字符串，不断偏移pstr指针，并且给*pstr赋值
+    //遍历结束之后 一定要给 *pstr一个 '\0'
+    while (*src) {
+        *pstr=*src;
+        pstr++;
+        src++;
+    }
+   *pstr='\0';
+    return dest;
+}
+
+
+char *mystrcat(char *dest ,const char*src)//dest 指向的空间 要可以容纳src的空间
+{
+    //1)*pstr 赋初值，比如dest=”abcd“,先让pstr指向’\0‘
+    //2)通过遍历src字符串，不断偏移pstr指针，并且给*pstr赋值
+    //3)遍历结束之后 一定要给 *pstr一个 '\0'
+    size_t len=strlen(dest);
+    char*pstr=dest+len;
+    while (*src) {
+        *pstr=*src;
+        pstr++;
+        src++;
+    }
+    *pstr='\0';
+    return dest;
+}
+
+/*
+ 参数
+ str1 -- 要进行比较的第一个字符串。
+ str2 -- 要进行比较的第二个字符串。
+ 返回值
+ 该函数返回值如下：
+ 如果返回值 < 0，则表示 str1 小于 str2。
+ 如果返回值 > 0，则表示 str2 小于 str1。
+ 如果返回值 = 0，则表示 str1 等于 str2
+ */
+
+
+int mystrcmp(char*str1,char*str2)
+{
+    //同时遍历两个字符串，只要不相等就退出
+    //返回比较的是第一个不相等的字符的ASCII之差
+    while (*str1&&*str2) {
+        if (*str1!=*str2) {
+            break;
+            
+        }
+        str1++;
+        str2++;
+    }
+    return *str1-*str2;
+
+}
+
+
+char* mystrchr(const char *src,char ch)
+{
+    while (*src) {
+        if (*src==ch) {
+            return (char *)src;
+        }
+        src++;
+    }
+    return NULL;
+
+}
+
+char* mystrrchr(const char *src,char ch)
+{
+    long  len=strlen(src);
+    char *pstr=(char*)src+len-1;
+    for (long i=len-1; i>0; i++) {
+        if (*pstr==ch) {
+            return pstr;
+        }
+        pstr--;
+    }
+     return NULL;
+}

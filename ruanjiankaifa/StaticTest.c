@@ -8,7 +8,7 @@
 
 #include "StaticTest.h"
 //static int val=50;
-void print(void)
+void printTest(void)
 {
     static int a=100;
     a++;

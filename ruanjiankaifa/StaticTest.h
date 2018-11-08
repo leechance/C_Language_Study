@@ -10,5 +10,5 @@
 #define StaticTest_h
 
 #include <stdio.h>
-void print(void);
+void printTest(void);
 #endif /* StaticTest_h */

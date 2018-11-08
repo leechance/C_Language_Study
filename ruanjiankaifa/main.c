@@ -71,6 +71,7 @@ void examTest(void){
 
 void studentTest(void);
 void studentHandleTest(void);
+void stringTest(void);
 
 int main(int argc, const char * argv[]) {
   
@@ -90,8 +91,9 @@ int main(int argc, const char * argv[]) {
    // JinZiTa4();
    // JuzhenReverse();
    // pointerBasicTest();
-    studentTest();
-    studentHandleTest();
+   // studentTest();
+   // studentHandleTest();
+    stringTest();
     
     
     
@@ -135,5 +137,46 @@ void studentHandleTest(void){
     printStudent2(tempId);
     releaseStudent2(tempId);
     
+    
+}
+void stringTest(void){
+    
+  unsigned long len=  mystrlen("abcdefgh");
+    
+    //拷贝
+    char buf[100]={};
+    char* p="abcd";
+    //char *ret=strcpy(buf, p1);
+    char *ret=mystrcpy(buf, p);
+    printf("%s\n%s\n%c\n",buf,ret,*ret);
+    
+    
+    //追加
+    char buf1[100]={};
+    char *p1="abcd";
+    strcpy(buf1, p1);
+    char *src="egfh";
+    //char *ret1= strcat(buf1,src);
+    char *ret1= mystrcat(buf1,src);
+    printf("%s\n%s\n%c\n",buf,ret1,*ret1);
+    
+    int c=strcmp("fjgff", "kgkghjgk");
+    printf("%d\n",c);
+    int d=strcmp("abc","cd");
+    printf("%d\n",d);
+    char*p0="abcd";
+    char j[]="abcd";
+    d=strcmp(p0,j);
+    
+    
+//    char*str=strchr("abcdefghijksdddsdsds", 'd');
+//    char*rstr=strrchr("abcdefghijkdjklleowip", 'd');
+    
+        char*str=mystrchr("abcdefghijksdddsdsds", 'd');
+        char*rstr=mystrrchr("abcdefghijkdjklleowip", 'd');
+    
+    
+    
+
     
 }
