@@ -6,6 +6,7 @@
 #include "CLanguageDemo.h"
 #include "StringTest.h"
 #include "PointerTest.h"
+#include "student.h"
 
 //文件
 FILE* fp;
@@ -66,6 +67,9 @@ void examTest(void){
         
     }
 }
+
+void studentTest(void);
+
 int main(int argc, const char * argv[]) {
   
    // printfTest();
@@ -83,9 +87,31 @@ int main(int argc, const char * argv[]) {
     //a1PlusA2toA3();
    // JinZiTa4();
    // JuzhenReverse();
-    pointerBasicTest();
+   // pointerBasicTest();
+    studentTest();
     
     
     
     return 0;
+}
+
+
+void studentTest(void){
+    //1、学生结构体开辟内存空间（malloc）
+    ST_STUDENT *stu=(ST_STUDENT*)malloc(sizeof(ST_STUDENT));
+    //2.开辟失败处理
+    if (!stu) {
+        exit(-1);
+    }
+    //3.生成具体结构体实例
+    initSTUDENT(stu,"小明",MALE,18);
+    
+    printStudent(stu);
+    setstudentName(stu,"小张");
+    printStudent(stu);
+    setstudentSex(stu, FEMALE);
+    printStudent(stu);
+    setstudentAge(stu, 25);
+    printStudent(stu);
+    deallocStudent(stu);
 }
