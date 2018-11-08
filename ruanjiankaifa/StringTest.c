@@ -12,6 +12,33 @@
 #include <string.h>
 #include <stdlib.h>
 
+
+//未完待续
+int myatoi(const char *src){
+  
+    int i=0;//记录位数
+    
+        if (*src=='-'||*src=='+'||(*src>='0'&&*src<='9')) {
+            i++;
+            src++;
+        
+            
+            while (src&&(*src>='0'&&*src<='9')) {
+                i++;
+                src++;
+                
+            }
+            
+            
+        }else{
+            return 0;
+        }
+    
+  
+    return 0;
+    
+}
+
 //字符串求长度
 unsigned long mystrlen(char *src)
 {

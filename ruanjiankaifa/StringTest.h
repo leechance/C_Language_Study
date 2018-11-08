@@ -75,6 +75,9 @@
 #define StringTest_h
 
 #include <stdio.h>
+//字符串转整数atoi
+int myatoi(const char *src);
+
 //字符串求长度
 unsigned long mystrlen(char *src);
 //字符串拷贝

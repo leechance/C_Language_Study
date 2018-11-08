@@ -141,6 +141,16 @@ void studentHandleTest(void){
 }
 void stringTest(void){
     
+    //atoi函数就是从左到右遍历，如果以字母开头，返回0，如果数字开头，知道不是数字
+    int a= atoi("7576"); //7576
+    int b=atoi("1234ghhg345"); //1234
+    int e=atoi("-1234-345");//-1234
+    int f=atoi("-f1213sf");//0
+    printf("%d\n%d\n%d\n",a,b,e,f);
+    
+
+    
+    
   unsigned long len=  mystrlen("abcdefgh");
     
     //拷贝
@@ -175,7 +185,7 @@ void stringTest(void){
         char*str=mystrchr("abcdefghijksdddsdsds", 'd');
         char*rstr=mystrrchr("abcdefghijkdjklleowip", 'd');
     
-    
+    int aaa= '0';
     
 
     
