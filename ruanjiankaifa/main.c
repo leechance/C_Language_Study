@@ -8,6 +8,7 @@
 #include "PointerTest.h"
 #include "student.h"
 #include "studentHandle.h"
+#include "ArrayTest.h"
 
 //文件
 FILE* fp;
@@ -72,6 +73,7 @@ void examTest(void){
 void studentTest(void);
 void studentHandleTest(void);
 void stringTest(void);
+void arrayTest(void);
 
 int main(int argc, const char * argv[]) {
   
@@ -93,7 +95,8 @@ int main(int argc, const char * argv[]) {
    // pointerBasicTest();
    // studentTest();
    // studentHandleTest();
-    stringTest();
+   // stringTest();
+    arrayTest();
     
     
     
@@ -189,4 +192,9 @@ void stringTest(void){
     
 
     
+}
+
+void arrayTest(void){
+    YangHuiSanjiao();
+    DengYaoYangHuiSanjiao();
 }
