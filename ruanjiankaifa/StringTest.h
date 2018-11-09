@@ -91,4 +91,80 @@ char* mystrchr(const char *src,char ch);
 //从从右到左遍历知道某个字符出现，从左到右输出
 char* mystrrchr(const char *src,char ch);
 
+
+
+/*
+ 定义一个字符数组，初始化数组，将内容输出利用memset函数将数组中的内容全部初始化为a,并将数组内容输出。
+ 比如：
+ 输入
+ asdfwd
+ 输出为
+ asdfwd
+ aaaaaa
+ 
+ 输入
+ sgfgeasdfw
+ 输出为
+ sgfgeasdfw
+ aaaaaaaaaa
+
+ */
+
+void stringReset(void);
+
+/*
+ 定义两个元素个数相同的整型数组，然后对其中一个数组进行随机初始化，
+ 利用memcpy函数将第一个数组中的内容复制到第二个数组中，并将两个数组中的内容分别输出。
+ 比如：
+ 输入
+ asdfwd
+ 输出为
+ asdfwd
+ asdfwd
+ 
+ 输入
+ sgfgeasdfw
+ 输出为
+ sgfgeasdfw
+ sgfgeasdfw
+ */
+void memcpyTest(void);
+
+/*
+ 比较一个字符串2在字符串1中是否存在,如果存在输出Y，否则输出N
+ 比如：
+ 输入
+ asdfwd
+ dfw
+ 输出为
+ Y
+ 
+ 输入
+ sgfgeasdfw
+ hhff
+ 输出为
+ N
+ */
+void strstrTest(void);
+
+
+/**
+ 查找一个字符在字符串1中第一次出现的字符位置，
+ 比如：
+ 输入
+ asdfwd
+ d
+ 输出为
+ 2
+ 
+ 输入
+ hhff
+ h
+ 输出为
+ 0
+ */
+int strncmpTest(char *s, char *a);
+
+void strncmpTestDemo(void);
+
 #endif 

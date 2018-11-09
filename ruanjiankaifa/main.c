@@ -95,8 +95,8 @@ int main(int argc, const char * argv[]) {
    // pointerBasicTest();
    // studentTest();
    // studentHandleTest();
-   // stringTest();
-    arrayTest();
+    stringTest();
+    //arrayTest();
     
     
     
@@ -189,6 +189,9 @@ void stringTest(void){
         char*rstr=mystrrchr("abcdefghijkdjklleowip", 'd');
     
     int aaa= '0';
+    
+    stringReset();
+    memcpyTest();
     
 
     

@@ -154,3 +154,61 @@ char* mystrrchr(const char *src,char ch)
     }
      return NULL;
 }
+
+//就是将字符串的每一个字符重置，原字符串改变
+void stringReset(void){
+        char str[100]={};
+        scanf("%s",str);
+        int len=(int)strlen(str);
+        char* ret=memset(str,'a',len);
+        printf("%s\n",str);
+        printf("原字符串：%s\n",ret);
+    
+}
+//由src所指内存区域复制count个字节到dest所指内存区域。
+//src和dest所指内存区域不能重叠，函数返回指向dest的指针。
+void memcpyTest(void){
+        char str[100]={};
+        char d[20];
+    
+        scanf("%s",str);
+        puts(str);
+        memcpy(d,str,strlen(str));
+        d[strlen(str)]=0;
+        printf("%s",d);
+        printf("原字符串：%s\n",d);
+    
+    //    return 0;
+}
+
+void strstrTest(void){
+   char str[100]={};
+   char p[20]={};
+   scanf("%s %s",str,p);
+   char*ret=strstr(str, p);
+   if (ret) {
+       printf("YES");
+   }else
+       printf("NO");
+}
+
+
+int strncmpTest(char *s, char *a){
+        int ls,la,i;
+        int flag = -1;
+        ls = (int )strlen(s);
+        la = (int)strlen(a);
+        if (la > ls) return -1;
+        for (i=0;i<=ls-la;i++){
+            if  (strncmp(s+i,a,la)==0) return i;
+        }
+        return flag;
+}
+void strncmpTestDemo(void){
+        char s[20]={};
+        char a[10]={};
+        scanf("%s %s",s,a);
+        int i;
+        i = strncmpTest(s,a);
+    if (i < 0) printf("No match\n"); else printf("%d\n",i);
+}
