@@ -82,8 +82,14 @@ void DengYaoYangHuiSanjiao(void){
             }
             printf("%4d",a[i][j]);
         }
+
+    }
+    for (int i=0; i<10; i++) {
+        printf("%*d", 24-2*i, a[i][0]);
+        for (int j=1; j<=i; j++) {
+            printf("%4d", a[i][j]);
+        }
         printf("\n");
-        
     }
     
 }
