@@ -99,9 +99,6 @@ void deallocStudent(ST_STUDENT *c_self)
     free(c_self);
     c_self=NULL;
     return;
-        
-
-
 }
 
 void printStudent(ST_STUDENT *c_self)
@@ -131,8 +128,6 @@ else
     printf("年龄: %d\n",c_self->age);
     printf("******************************\n");
     printf("******************************\n");
-    
-    
 }
 
 

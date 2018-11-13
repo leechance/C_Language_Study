@@ -10,21 +10,46 @@
 #include "studentHandle.h"
 #include "ArrayTest.h"
 
+#pragma mark 全局变量或者静态变量
 //文件
 FILE* fp;
 //数组
 int *a;
 
+#pragma mark 函数声明
+void studentTest(void);
+void studentHandleTest(void);
+void stringTest(void);
+void arrayTest(void);
+void DemoTest(void);
+void pointerTest(void);
 
-void basicTest(void){
-    // printfTest();
-    // scanfTest();
-    
-     fprintfTest(fp);
+int main(int argc, const char * argv[]) {
+
+    fflush(stdin);
+    //fopen函数（https://blog.csdn.net/manonghouyiming/article/details/78606710）
+    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/out.txt", "w+");
+//    basicTest();
+//    examTest();
+      DemoTest();
+
+//    studentTest();
+//    studentHandleTest();
+//    stringTest();
+//    arrayTest();
+    pointerTest();
+    return 0;
 }
 
+#pragma mark 基础测试
+void basicTest(void){
+//    printfTest();
+//    scanfTest();
+    fprintfTest(fp);
+}
+#pragma mark 软件开发工具考试
 void examTest(void){
-  
+    
     int n,range;
     char ch;
     //功能1 。循环等待用户输入
@@ -37,7 +62,7 @@ void examTest(void){
         }
     }
     
-
+    
     
     //功能2.初始化数组
     a=(int*)malloc(n*sizeof(int));
@@ -70,40 +95,17 @@ void examTest(void){
     }
 }
 
-void studentTest(void);
-void studentHandleTest(void);
-void stringTest(void);
-void arrayTest(void);
 
-int main(int argc, const char * argv[]) {
-  
-   // printfTest();
-   // scanfTest();
-    
-    
-    fflush(stdin);
-    // fopen函数（https://blog.csdn.net/manonghouyiming/article/details/78606710）
-    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/out.txt", "w+");
-  //  basicTest();
-    //examTest();
-    
-    //Faibonaqi2();
-    //jiecheng();
-    //a1PlusA2toA3();
-   // JinZiTa4();
-   // JuzhenReverse();
-   // pointerBasicTest();
-   // studentTest();
-   // studentHandleTest();
-    stringTest();
-    //arrayTest();
-    
-    
-    
-    return 0;
+#pragma mark C语言编程demo
+void DemoTest(void){
+//    Faibonaqi2();
+//    jiecheng();
+//    a1PlusA2toA3();
+//    JinZiTa4();
+//    JuzhenReverse();
 }
 
-
+#pragma mark 结构体模拟对象
 void studentTest(void){
     //1、学生结构体开辟内存空间（malloc）
     ST_STUDENT *stu=(ST_STUDENT*)malloc(sizeof(ST_STUDENT));
@@ -123,6 +125,8 @@ void studentTest(void){
     printStudent(stu);
     deallocStudent(stu);
 }
+
+#pragma mark 创建多个对象使用 句柄
 void studentHandleTest(void){
     
     //这三个是不同的学生，在结构体的数组的索引是0，1，2
@@ -142,6 +146,7 @@ void studentHandleTest(void){
     
     
 }
+#pragma mark 字符串测试
 void stringTest(void){
     
     //atoi函数就是从左到右遍历，如果以字母开头，返回0，如果数字开头，知道不是数字
@@ -196,8 +201,12 @@ void stringTest(void){
 
     
 }
-
+#pragma mark 数组测试
 void arrayTest(void){
     YangHuiSanjiao();
     DengYaoYangHuiSanjiao();
+}
+#pragma mark 指针测试
+void pointerTest(void){
+    pointerBasicTest();
 }
