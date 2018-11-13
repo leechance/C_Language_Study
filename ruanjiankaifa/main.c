@@ -3,6 +3,9 @@
 
 #include "Header.h"
 
+#define LENGTH 10
+#define RANGE  100
+
 #pragma mark 函数声明
 void basicTest(void);
 void studentTest(void);
@@ -14,16 +17,18 @@ void pointerTest(void);
 
 #pragma mark 程序入口
 int main(int argc, const char * argv[]) {
+    
+    
 
 
-    basicTest();
+//    basicTest();
 //    examTest();
 //    DemoTest();
 
 //    studentTest();
 //    studentHandleTest();
 //    stringTest();
-//    arrayTest();
+    arrayTest();
 //    pointerTest();
     
     return EXIT_SUCCESS;
@@ -143,8 +148,18 @@ void stringTest(void){
 }
 #pragma mark 数组测试
 void arrayTest(void){
-    YangHuiSanjiao();
-    DengYaoYangHuiSanjiao();
+//    YangHuiSanjiao();
+//    DengYaoYangHuiSanjiao();
+    
+   
+    
+    int *a =initArrayWithRandFunc(LENGTH, RANGE);
+    //maopaoSort(a, LENGTH);
+    //selectSort(a, LENGTH);
+    insertSort(a,LENGTH);
+    
+    
+    
 }
 #pragma mark 指针测试
 void pointerTest(void){

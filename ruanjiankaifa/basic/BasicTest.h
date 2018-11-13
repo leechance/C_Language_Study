@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 
+
 //输出函数printf
 void printfTest(void);
 void scanfTest(void);

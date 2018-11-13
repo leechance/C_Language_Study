@@ -68,6 +68,27 @@ void DengYaoYangHuiSanjiao(void);
  */
 void reverseString(void);
 
+#pragma mark 排序
+
+
+/**
+ 随机生成数组
+
+ @param n 数组的个数
+ @param range 数组元素数值的范围
+ @return 数组
+ */
+int * initArrayWithRandFunc(int n,int range);
+//打印
+void printArrayToFile(int*arr,int n);
+//冒泡排序
+void maopaoSort(int*arr,int n);
+//选择排序
+void selectSort(int*a,int n);
+
+//插入排序
+void insertSort(int a[], int len);
+
 
 #endif/* ArrayTest_h */
 
