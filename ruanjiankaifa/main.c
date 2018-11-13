@@ -16,9 +16,9 @@ void pointerTest(void);
 int main(int argc, const char * argv[]) {
 
 
-//    basicTest();
+    basicTest();
 //    examTest();
-    DemoTest();
+//    DemoTest();
 
 //    studentTest();
 //    studentHandleTest();
