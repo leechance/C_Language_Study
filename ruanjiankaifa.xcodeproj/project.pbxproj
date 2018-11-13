@@ -71,6 +71,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C35DCD0219A701500A84557 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0EB672193CDC9008CF8BE /* student.h */,
+				4CE0EB682193CDC9008CF8BE /* student.c */,
+				4CE0EB6A2193D46C008CF8BE /* studentHandle.h */,
+				4CE0EB6B2193D46C008CF8BE /* studentHandle.c */,
+				4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */,
+				4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */,
+				4C4F7129218FF74F00838473 /* BasicTest.h */,
+				4C4F712A218FF74F00838473 /* BasicTest.c */,
+				4C4F712C218FF8B700838473 /* Exam.h */,
+				4C4F712D218FF8B700838473 /* Exam.c */,
+				4CE0EB5E2191210D008CF8BE /* StringTest.h */,
+				4CE0EB5F2191210D008CF8BE /* StringTest.c */,
+				4CE0EB6121913281008CF8BE /* PointerTest.h */,
+				4CE0EB6221913281008CF8BE /* PointerTest.c */,
+				4CE0EB73219420D6008CF8BE /* ArrayTest.h */,
+				4CE0EB74219420D6008CF8BE /* ArrayTest.c */,
+				4CE0EB6D2193DAE7008CF8BE /* MemoryTest.h */,
+				4CE0EB6E2193DAE7008CF8BE /* MemoryTest.c */,
+				4CE0EB702193DBF3008CF8BE /* StaticTest.h */,
+				4CE0EB712193DBF3008CF8BE /* StaticTest.c */,
+			);
+			path = basic;
+			sourceTree = "<group>";
+		};
+		4C35DCD1219A701500A84557 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				4C4F7128218FE75C00838473 /* out.txt */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
 		4C4F7115218FD63700838473 = {
 			isa = PBXGroup;
 			children = (
@@ -91,29 +126,10 @@
 		4C4F7120218FD63700838473 /* ruanjiankaifa */ = {
 			isa = PBXGroup;
 			children = (
+				4C35DCD0219A701500A84557 /* basic */,
+				4C35DCD1219A701500A84557 /* output */,
 				4C4F7121218FD63700838473 /* main.c */,
-				4CE0EB672193CDC9008CF8BE /* student.h */,
-				4CE0EB682193CDC9008CF8BE /* student.c */,
 				4C35DCCC219A62FF00A84557 /* Header.h */,
-				4CE0EB6A2193D46C008CF8BE /* studentHandle.h */,
-				4CE0EB6B2193D46C008CF8BE /* studentHandle.c */,
-				4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */,
-				4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */,
-				4C4F7129218FF74F00838473 /* BasicTest.h */,
-				4C4F712A218FF74F00838473 /* BasicTest.c */,
-				4C4F712C218FF8B700838473 /* Exam.h */,
-				4C4F712D218FF8B700838473 /* Exam.c */,
-				4CE0EB5E2191210D008CF8BE /* StringTest.h */,
-				4CE0EB5F2191210D008CF8BE /* StringTest.c */,
-				4CE0EB6121913281008CF8BE /* PointerTest.h */,
-				4CE0EB6221913281008CF8BE /* PointerTest.c */,
-				4CE0EB73219420D6008CF8BE /* ArrayTest.h */,
-				4CE0EB74219420D6008CF8BE /* ArrayTest.c */,
-				4CE0EB6D2193DAE7008CF8BE /* MemoryTest.h */,
-				4CE0EB6E2193DAE7008CF8BE /* MemoryTest.c */,
-				4CE0EB702193DBF3008CF8BE /* StaticTest.h */,
-				4CE0EB712193DBF3008CF8BE /* StaticTest.c */,
-				4C4F7128218FE75C00838473 /* out.txt */,
 			);
 			path = ruanjiankaifa;
 			sourceTree = "<group>";

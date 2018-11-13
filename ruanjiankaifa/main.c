@@ -3,9 +3,6 @@
 
 #include "Header.h"
 
-#pragma mark 全局变量或者静态变量
-
-
 #pragma mark 函数声明
 void basicTest(void);
 void studentTest(void);
@@ -15,6 +12,7 @@ void arrayTest(void);
 void DemoTest(void);
 void pointerTest(void);
 
+#pragma mark 程序入口
 int main(int argc, const char * argv[]) {
 
 
@@ -27,7 +25,8 @@ int main(int argc, const char * argv[]) {
 //    stringTest();
 //    arrayTest();
 //    pointerTest();
-    return 0;
+    
+    return EXIT_SUCCESS;
 }
 
 #pragma mark 基础测试
@@ -36,7 +35,7 @@ void basicTest(void){
 //    scanfTest();
     
     fflush(stdin);
-    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/out.txt", "w+");
+    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/output/out.txt", "w+");
     fprintfTest(fp);
 }
 

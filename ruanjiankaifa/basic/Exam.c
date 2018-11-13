@@ -30,7 +30,7 @@ void examTest(void){
     
     fflush(stdin);
     //fopen函数（https://blog.csdn.net/manonghouyiming/article/details/78606710）
-    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/out.txt", "w+");
+    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/output/out.txt", "w+");
     
     int n,range;
     char ch;
