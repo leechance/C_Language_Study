@@ -156,3 +156,158 @@ void readFileTest3(void){
    
     
 }
+
+//将source.txt文件复制成target.txt文件
+void copyFileTest(void){
+    printf("此程序执行将source.txt中的文本复制到target.txt之中!\n");
+    
+    FILE *fpin,*fpout;//定义两个文件指针，因为要对两个文件实施操作
+    char c;
+    //打开和错误判断
+    if((fpin=fopen("source.txt","r"))==NULL)
+    {
+        printf("source file cannot open!");
+        exit(0);
+    }
+    if ((fpout=fopen("target.txt", "w"))==NULL)
+    {
+        printf("target file cannot open!");
+        exit(0);
+    }
+    
+    
+    //复制操作
+    while((c=fgetc(fpin))!=EOF)
+    {
+        fputc(c,fpout);
+    }
+    printf("finish copy!");
+    
+    //关闭文件
+    fclose(fpin);
+    fclose(fpout);
+    
+}
+
+//大奖赛分数：
+void fprintfTest2(void){
+    printf("此程序执行将大奖赛的计分结果直接存入文件\n\n");
+    
+    FILE *fp;//文件指针
+    
+    //打开和错误判断,最终用户输入的数据保存到record.txt的文件之中
+    if ((fp=fopen("record.txt", "w"))==NULL)
+    {
+        printf("target file cannot open!");
+        exit(0);
+    }
+    
+    //变量定义
+    int iJudger_Number,iSinger_SumNum,j,iCurr_SinggerNum;
+    float fMark,fAver,fSum,fMax,fMin;
+    
+    printf("请输入评委总数和歌手总数:");//输入评委总数和歌手总数
+    scanf("%d %d",&iJudger_Number,&iSinger_SumNum);
+    
+    //文件中打出表头
+    fprintf(fp,"No.\t");
+    for(j=1;j<=iJudger_Number;j++)
+    {
+        fprintf(fp,"评委%d\t",j);
+    }
+    fprintf(fp,"Max\tMin\tAve\n");
+    
+    //用户输入比赛选手信息
+    iCurr_SinggerNum=1;
+    while(iCurr_SinggerNum<=iSinger_SumNum)
+    {
+        fSum=0;
+        fMax=0;
+        fMin=10;
+        j=1;
+        printf("参赛者%d:",iCurr_SinggerNum);
+        fprintf(fp,"%d\t",iCurr_SinggerNum);//在文件中打出No下面的数字，第几个参赛选手
+        
+        
+        do
+        {
+            scanf("%f",&fMark);
+            fprintf(fp, "%.2f\t", fMark);
+            
+            fSum=fSum+fMark;
+            if(fMax<fMark)
+            {
+                fMax=fMark;
+            }
+            if(fMin>fMark)
+            {
+                fMin=fMark;
+            }
+            j++;
+        }while(j<=iJudger_Number);
+        
+        fAver=(fSum-fMax-fMin)/(iJudger_Number-2); //计算平均成绩
+        
+        fprintf(fp,"%.2f\t%.2f\t%.2f\t\n",fMax,fMin,fAver);//输出后三项
+        
+        iCurr_SinggerNum++;
+    }
+    
+    //关闭文件
+    fclose(fp);
+
+}
+//实践1：从键盘输入一个文件名，以及一个以#结束的字符序列，将输入的字符保存到文件中去
+void fileTest(void){
+    printf("此程序执行从键盘输入一个文件名，以及一个以#结束的字符序列，将输入的字符保存到文件中去。\n");
+    FILE *fp;
+    char ch,fname[10];
+    printf("文件名:");
+    gets(fname);
+    if((fp=fopen(fname,"w"))==NULL)
+    {
+        printf("cannot open!\n");
+        exit(0);
+    }
+    while((ch=getchar())!='#')
+    {
+        fputc(ch,fp);
+    }
+    fclose(fp);
+    
+
+    
+}
+//此程序执行将文件file1.dat的内容输出到屏幕上并复制到文件file2.dat中
+void fileTest2(void){
+    printf("此程序执行将文件file1.dat的内容输出到屏幕上并复制到文件file2.dat中，请补充完整。\n");
+    FILE *fp1,*fp2;
+    char ch;
+    
+    //指针判断
+    fp1=fopen("file1.dat","r");
+    fp2=fopen("file2.dat","w");
+    
+    if(fp1==NULL)
+    {
+        printf("file cannot open !");
+        exit(0);
+    }
+    if(fp2==NULL)
+    {
+        printf("file2 cannot open!");
+        exit(0);
+    }
+    
+    //执行过程
+    while (!feof(fp1))
+    {
+        ch=fgetc(fp1);
+        putchar(ch);
+        fputc(ch,fp2);
+    }
+    fclose(fp1);
+    fclose(fp2) ;
+    
+}
+
