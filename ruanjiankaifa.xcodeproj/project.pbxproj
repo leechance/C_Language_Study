@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C35DCCC219A62FF00A84557 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		4C4F711E218FD63700838473 /* ruanjiankaifa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ruanjiankaifa; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4F7121218FD63700838473 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C4F7128218FE75C00838473 /* out.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = out.txt; sourceTree = "<group>"; };
@@ -89,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				4C4F7121218FD63700838473 /* main.c */,
-				4CE0EB682193CDC9008CF8BE /* student.c */,
 				4CE0EB672193CDC9008CF8BE /* student.h */,
+				4CE0EB682193CDC9008CF8BE /* student.c */,
+				4C35DCCC219A62FF00A84557 /* Header.h */,
 				4CE0EB6A2193D46C008CF8BE /* studentHandle.h */,
 				4CE0EB6B2193D46C008CF8BE /* studentHandle.c */,
 				4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */,
