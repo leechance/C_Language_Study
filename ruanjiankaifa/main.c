@@ -156,10 +156,7 @@ void stringTest(void){
     int f=atoi("-f1213sf");//0
     printf("%d\n%d\n%d\n",a,b,e,f);
     
-
-    
-    
-  unsigned long len=  mystrlen("abcdefgh");
+    unsigned long len=  mystrlen("abcdefgh");
     
     //拷贝
     char buf[100]={};
