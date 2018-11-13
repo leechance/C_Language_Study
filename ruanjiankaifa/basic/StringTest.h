@@ -70,6 +70,15 @@
  */
 
 
+/*
+ 1）字符的运算
+ int dd= 'c'-'a'; dd的值是2
+ char c= 'a'+2; ;  c的值为 ’c‘
+  0和’0‘的转化
+  int num= '0'-48; num的值为0
+ 
+ */
+
 
 #ifndef StringTest_h
 #define StringTest_h

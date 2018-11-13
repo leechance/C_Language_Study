@@ -39,6 +39,9 @@
 		4C35DCD2219A9E9100A84557 /* out2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = out2.txt; sourceTree = "<group>"; };
 		4C35DCD4219AB49D00A84557 /* search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
 		4C35DCD5219AB49D00A84557 /* search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		4C35DCD7219B11BA00A84557 /* in.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = in.txt; sourceTree = "<group>"; };
+		4C35DCD8219B19D600A84557 /* src.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = src.jpg; sourceTree = "<group>"; };
+		4C35DCD9219B1A0600A84557 /* des.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = des.jpg; sourceTree = "<group>"; };
 		4C4F711E218FD63700838473 /* ruanjiankaifa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ruanjiankaifa; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4F7121218FD63700838473 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C4F7128218FE75C00838473 /* out.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = out.txt; sourceTree = "<group>"; };
@@ -105,6 +108,9 @@
 		4C35DCD1219A701500A84557 /* output */ = {
 			isa = PBXGroup;
 			children = (
+				4C35DCD9219B1A0600A84557 /* des.jpg */,
+				4C35DCD8219B19D600A84557 /* src.jpg */,
+				4C35DCD7219B11BA00A84557 /* in.txt */,
 				4C35DCD2219A9E9100A84557 /* out2.txt */,
 				4C4F7128218FE75C00838473 /* out.txt */,
 			);
