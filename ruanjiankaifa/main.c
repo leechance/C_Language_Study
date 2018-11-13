@@ -19,8 +19,8 @@ int main(int argc, const char * argv[]) {
 
 
 //    basicTest();
-    examTest();
-//    DemoTest();
+//    examTest();
+    DemoTest();
 
 //    studentTest();
 //    studentHandleTest();

@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		4C35DCCC219A62FF00A84557 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4C35DCCD219A696E00A84557 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C4F711E218FD63700838473 /* ruanjiankaifa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ruanjiankaifa; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4F7121218FD63700838473 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C4F7128218FE75C00838473 /* out.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = out.txt; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		4C4F7115218FD63700838473 = {
 			isa = PBXGroup;
 			children = (
+				4C35DCCD219A696E00A84557 /* README.md */,
 				4C4F7120218FD63700838473 /* ruanjiankaifa */,
 				4C4F711F218FD63700838473 /* Products */,
 			);
