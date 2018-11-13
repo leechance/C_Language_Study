@@ -9,6 +9,7 @@
 #include "ArrayTest.h"
 #include <time.h>
 #include <stdlib.h>
+#include <string.h>
 
 FILE*pFile;
 
@@ -186,6 +187,17 @@ int * initArrayWithRandFunc(int n,int range){
     return arr;
     
 }
+void just_printArray(int*arr,int n){
+    for (int i=0; i<n; i++) {
+        printf("%4d",arr[i]);
+        
+        //输出完毕换行
+        if (i==n-1) {
+            printf("\n");
+        }
+        
+    }
+}
 void printArrayToFile(int*arr,int n){
     
     for (int i=0; i<n; i++) {
@@ -254,6 +266,39 @@ void selectSort(int *a,int n){
         }
     
 }
+/*
+ * 快速排序
+ *
+ * 参数说明：
+ *     a -- 待排序的数组
+ *     l -- 数组的左边界(例如，从起始位置开始排序，则l=0)
+ *     r -- 数组的右边界(例如，排序截至到数组末尾，则r=a.length-1)
+ */
+void quick_sort(int a[], int l, int r)
+{
+    if (l < r)
+    {
+        int i,j,x;
+        
+        i = l;
+        j = r;
+        x = a[i];
+        while (i < j)
+        {
+            while(i < j && a[j] > x)
+                j--; // 从右向左找第一个小于x的数
+            if(i < j)
+                a[i++] = a[j];
+            while(i < j && a[i] < x)
+                i++; // 从左向右找第一个大于x的数
+            if(i < j)
+                a[j--] = a[i];
+        }
+        a[i] = x;
+        quick_sort(a, l, i-1); /* 递归调用 */
+        quick_sort(a, i+1, r); /* 递归调用 */
+    }
+}
 void insertSort(int a[], int len)
 {
     printf("原数组： ");
@@ -278,3 +323,106 @@ void insertSort(int a[], int len)
     }
 }
 
+void bucketSort(int a[], int n, int max)
+{
+    just_printArray(a, n);
+
+    int i,j;
+    int buckets[max];
+    
+    // 将buckets中的所有数据都初始化为0。
+    memset(buckets, 0, max*sizeof(int));
+    
+    // 1. 计数
+    for(i = 0; i < n; i++){
+         buckets[a[i]]++;
+        
+    }
+    printf("桶里的数据：\n");
+    just_printArray(buckets, max);
+    
+    
+    // 2. 排序
+    for (i = 0, j = 0; i < max; i++)
+    {
+        while( (buckets[i]--) >0 )
+            a[j++] = i;
+    }
+    
+    just_printArray(a, n);
+}
+
+
+/*
+ * 获取数组a中最大值
+ *
+ * 参数说明：
+ *     a -- 数组
+ *     n -- 数组长度
+ */
+int get_max(int a[], int n)
+{
+    int i, max;
+    
+    max = a[0];
+    for (i = 1; i < n; i++)
+        if (a[i] > max)
+            max = a[i];
+    return max;
+}
+
+/*
+ * 对数组按照"某个位数"进行排序(桶排序)
+ *
+ * 参数说明：
+ *     a -- 数组
+ *     n -- 数组长度
+ *     exp -- 指数。对数组a按照该指数进行排序。
+ *
+ * 例如，对于数组a={50, 3, 542, 745, 2014, 154, 63, 616}；
+ *    (01) 当exp=1表示按照"个位"对数组a进行排序
+ *    (02) 当exp=10表示按照"十位"对数组a进行排序
+ *    (03) 当exp=100表示按照"百位"对数组a进行排序
+ *    ...
+ */
+void count_sort(int a[], int n, int exp)
+{
+    int output[n];             // 存储"被排序数据"的临时数组
+    int i, buckets[10] = {0};
+    
+    // 将数据出现的次数存储在buckets[]中
+    for (i = 0; i < n; i++)
+        buckets[ (a[i]/exp)%10 ]++;
+    
+    // 更改buckets[i]。目的是让更改后的buckets[i]的值，是该数据在output[]中的位置。
+    for (i = 1; i < 10; i++)
+        buckets[i] += buckets[i - 1];
+    
+    // 将数据存储到临时数组output[]中
+    for (i = n - 1; i >= 0; i--)
+    {
+        output[buckets[ (a[i]/exp)%10 ] - 1] = a[i];
+        buckets[ (a[i]/exp)%10 ]--;
+    }
+    
+    // 将排序好的数据赋值给a[]
+    for (i = 0; i < n; i++)
+        a[i] = output[i];
+}
+
+/*
+ * 基数排序
+ *
+ * 参数说明：
+ *     a -- 数组
+ *     n -- 数组长度
+ */
+void radix_sort(int a[], int n)
+{
+    int exp;    // 指数。当对数组按各位进行排序时，exp=1；按十位进行排序时，exp=10；...
+    int max = get_max(a, n);    // 数组a中的最大值
+    
+    // 从个位开始，对数组a按"指数"进行排序
+    for (exp = 1; max/exp > 0; exp *= 10)
+        count_sort(a, n, exp);
+}

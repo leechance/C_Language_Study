@@ -68,7 +68,10 @@ void DengYaoYangHuiSanjiao(void);
  */
 void reverseString(void);
 
+
 #pragma mark 排序
+//https://blog.csdn.net/l_215851356/article/details/77659462
+
 
 
 /**
@@ -79,15 +82,47 @@ void reverseString(void);
  @return 数组
  */
 int * initArrayWithRandFunc(int n,int range);
+
 //打印
+void just_printArray(int*arr,int n);
+//打印到文件
 void printArrayToFile(int*arr,int n);
 //冒泡排序
 void maopaoSort(int*arr,int n);
 //选择排序
 void selectSort(int*a,int n);
+/*
+ * 快速排序
+ *
+ * 参数说明：
+ *     a -- 待排序的数组
+ *     l -- 数组的左边界(例如，从起始位置开始排序，则l=0)
+ *     r -- 数组的右边界(例如，排序截至到数组末尾，则r=a.length-1)
+ */
+void quick_sort(int a[], int l, int r);
 
 //插入排序
 void insertSort(int a[], int len);
+
+/*
+ * 桶排序
+ *
+ * 参数说明：
+ *     a -- 待排序数组
+ *     n -- 数组a的长度
+ *     max -- 数组a中最大值的范围
+ */
+void bucketSort(int a[], int n, int max);
+
+
+/*
+ * 基数排序
+ *
+ * 参数说明：
+ *     a -- 数组
+ *     n -- 数组长度
+ */
+void radix_sort(int a[], int n);
 
 
 #endif/* ArrayTest_h */

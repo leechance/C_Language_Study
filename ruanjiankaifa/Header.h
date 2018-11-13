@@ -18,5 +18,6 @@
 #include "student.h"
 #include "studentHandle.h"
 #include "ArrayTest.h"
+#include "search.h"
 
 #endif /* Header_h */

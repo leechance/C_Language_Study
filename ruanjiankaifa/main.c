@@ -156,7 +156,30 @@ void arrayTest(void){
     int *a =initArrayWithRandFunc(LENGTH, RANGE);
     //maopaoSort(a, LENGTH);
     //selectSort(a, LENGTH);
-    insertSort(a,LENGTH);
+    //insertSort(a,LENGTH);
+    
+    
+     //桶排序
+    bucketSort(a, LENGTH, RANGE);
+    
+    
+    //顺序查找
+//    just_printArray(a, LENGTH);
+//    arr_sequence_search(a, LENGTH, 10);
+//    int  b[10] = {1,2,3,4,5,6,7,8,9,10};
+//    arr_sequence_search(b, 10, 10);
+    
+    
+    
+    //二分查找
+//    arr_middleSlice_search(a, LENGTH, 0, 9, 10);
+//     int  b[10] = {1,2,3,4,5,6,7,8,9,10};
+//     arr_middleSlice_search(b, LENGTH, 0, 9, 10);
+    
+   
+
+    
+    
     
     
     

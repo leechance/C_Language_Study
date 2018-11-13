@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C35DCD6219AB49D00A84557 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DCD5219AB49D00A84557 /* search.c */; };
 		4C4F7122218FD63700838473 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F7121218FD63700838473 /* main.c */; };
 		4C4F712B218FF74F00838473 /* BasicTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712A218FF74F00838473 /* BasicTest.c */; };
 		4C4F712E218FF8B700838473 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712D218FF8B700838473 /* Exam.c */; };
@@ -36,6 +37,8 @@
 		4C35DCCC219A62FF00A84557 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		4C35DCCD219A696E00A84557 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C35DCD2219A9E9100A84557 /* out2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = out2.txt; sourceTree = "<group>"; };
+		4C35DCD4219AB49D00A84557 /* search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		4C35DCD5219AB49D00A84557 /* search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
 		4C4F711E218FD63700838473 /* ruanjiankaifa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ruanjiankaifa; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4F7121218FD63700838473 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C4F7128218FE75C00838473 /* out.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = out.txt; sourceTree = "<group>"; };
@@ -108,6 +111,15 @@
 			path = output;
 			sourceTree = "<group>";
 		};
+		4C35DCD3219AB44700A84557 /* ds */ = {
+			isa = PBXGroup;
+			children = (
+				4C35DCD4219AB49D00A84557 /* search.h */,
+				4C35DCD5219AB49D00A84557 /* search.c */,
+			);
+			path = ds;
+			sourceTree = "<group>";
+		};
 		4C4F7115218FD63700838473 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +140,7 @@
 		4C4F7120218FD63700838473 /* ruanjiankaifa */ = {
 			isa = PBXGroup;
 			children = (
+				4C35DCD3219AB44700A84557 /* ds */,
 				4C35DCD0219A701500A84557 /* basic */,
 				4C35DCD1219A701500A84557 /* output */,
 				4C4F7121218FD63700838473 /* main.c */,
@@ -195,6 +208,7 @@
 				4CE0EB6F2193DAE7008CF8BE /* MemoryTest.c in Sources */,
 				4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */,
 				4C4F712B218FF74F00838473 /* BasicTest.c in Sources */,
+				4C35DCD6219AB49D00A84557 /* search.c in Sources */,
 				4CE0EB692193CDC9008CF8BE /* student.c in Sources */,
 				4CE0EB6C2193D46C008CF8BE /* studentHandle.c in Sources */,
 				4CE0EB722193DBF3008CF8BE /* StaticTest.c in Sources */,
