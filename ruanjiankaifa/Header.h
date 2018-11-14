@@ -19,5 +19,7 @@
 #include "studentHandle.h"
 #include "ArrayTest.h"
 #include "search.h"
+#include "LinkList.h"
+#include "SeqList.h"
 
 #endif /* Header_h */

@@ -14,15 +14,13 @@ void stringTest(void);
 void arrayTest(void);
 void DemoTest(void);
 void pointerTest(void);
+void dataStructorTest(void);
 
 #pragma mark 程序入口
 int main(int argc, const char * argv[]) {
    
-  
-    
-    
-    basicTest();
-    //examTest();
+//    basicTest();
+//    examTest();
 //    DemoTest();
 
 //    studentTest();
@@ -30,6 +28,8 @@ int main(int argc, const char * argv[]) {
 //    stringTest();
 //    arrayTest();
 //    pointerTest();
+    dataStructorTest();
+    
     
     return EXIT_SUCCESS;
 }
@@ -194,4 +194,73 @@ void arrayTest(void){
 #pragma mark 指针测试
 void pointerTest(void){
     pointerBasicTest();
+}
+
+
+
+void testSeqList(){
+    //初始化顺序表
+    SeqList*L =InitialList();
+    //    InsertList(L, 1, 0);
+    //    InsertList(L, 2, 1);
+    //    InsertList(L, 3, 2);
+    //    InsertList(L, 4, 3);
+    //    InsertList(L, 5, 4);
+    //    InsertList(L, 6, 5);
+    
+    
+    int scin=0;
+    int i=0;
+    while (i<6) {
+        scanf("%d",&scin);
+        InsertList(L, scin, i);
+        i++;
+    }
+    
+    InsertList(L, 100, 5);
+    printL(L);
+    DeleteList(L, 3);
+    printL(L);
+    int length=getLength(L);
+    
+}
+
+
+void testLinkList(){
+    
+    LinkList head;
+    //    head =createLinkList1();
+    //    printLinkList(head);
+    
+    //    head =createLinkList2();
+    //    printLinkList(head);
+    
+    
+    //前插法初始化链表
+    head =createLinkList3();
+    printf("输出初始化列表");
+    printLinkList(head);
+    
+    //插入一个结点
+    printf("插入一个结点");
+    InsertLinkList(head, 100, 4);
+    printLinkList(head);
+    
+    printf("删除重复结点");
+    PurgeLinkList(head);
+    
+    printLinkList(head);
+    
+    printf("逆序之后");
+    head =ReverseList(head);
+    printLinkList(head);
+    
+    
+    
+}
+
+#pragma mark 数据结构测试
+void dataStructorTest(void){
+    //testSeqList();
+    testLinkList();
 }
