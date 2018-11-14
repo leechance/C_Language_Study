@@ -17,9 +17,12 @@ void pointerTest(void);
 
 #pragma mark 程序入口
 int main(int argc, const char * argv[]) {
-
+   
+  
+    
+    
     basicTest();
-//    examTest();
+    //examTest();
 //    DemoTest();
 
 //    studentTest();
@@ -39,10 +42,11 @@ void basicTest(void){
 //    fflush(stdin);
 //    fp=fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/output/out.txt", "w+");
 //    fprintfTest(fp);
-    
-    readFileTest();
-    readFileTest2();
-    readFileTest3();
+//
+//    readFileTest();
+//    readFileTest2();
+//    readFileTest3();
+    countInputCharNumber();
 }
 
 #pragma mark C语言编程demo

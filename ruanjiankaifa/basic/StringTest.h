@@ -176,6 +176,9 @@ int strncmpTest(char *s, char *a);
 
 void strncmpTestDemo(void);
 
+//统计输入字符数
+int countInputCharNumber(void);
+
 
  
 #endif 

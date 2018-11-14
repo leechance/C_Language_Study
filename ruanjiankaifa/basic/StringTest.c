@@ -212,3 +212,22 @@ void strncmpTestDemo(void){
         i = strncmpTest(s,a);
     if (i < 0) printf("No match\n"); else printf("%d\n",i);
 }
+//统计输入字符数
+int countInputCharNumber(void){
+    char ch=' ';
+    int count=0;
+   //这行代码如果不添加，在Xcode控制台输入字符，不显示
+    printf("请输入字符 按回车键结束：\n");
+    //1. while的循环条件其实是逗号表达式，先执行 scanf("%c",&ch)，但是判断条件是ch!='\n'
+    //2. 如果把 scanf("%c",&ch) 放入循环体内，这样统计字符的话，会多一个
+    //3 scanf函数的返回值，不管输入什么字符都是返回1
+    
+    while (scanf("%c",&ch),ch!='\n') {
+        count++;
+    }
+  
+    printf("\ncount = %d", count);
+   
+    
+    return count;
+}
