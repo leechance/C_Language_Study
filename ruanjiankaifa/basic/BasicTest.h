@@ -16,6 +16,12 @@ void scanfTest(void);
 //打印到文件
 void fprintfTest(FILE*fp);
 
+
+//文件操作三步
+//1. 文件打开 fopen ,并且判断是否f打开成功
+//2. 文件处理 fprintf,fgetc,fgets,fputc,fputs,fread,fwrite;在while循环中处理
+//3. 文件关闭 fclose 并且要判断文件是否关闭成功
+
 //读取文件的三种方式 字符，字符串，二进制流
 //字符 fgetc
 void readFileTest(void);

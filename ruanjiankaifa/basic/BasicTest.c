@@ -62,7 +62,7 @@ void readFileTest(void){
     fp = fopen("/Users/chance/Documents/GitHub/C_Language_Study/ruanjiankaifa/output/in.txt","r");
     if(fp==NULL){
         puts("can't open the file!");
-        
+       
     }
     puts("open file success!\n");
     puts("文件内容是：");
