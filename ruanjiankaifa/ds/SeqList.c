@@ -1,9 +1,7 @@
 //
 //  SeqList.c
 //  C数据结构
-//
 //  Created by chance on 2017/9/10.
-//  Copyright © 2017年 Shanghai Zhongyi Communication Technology Engieering Co., Ltd. All rights reserved.
 //
 
 #include "SeqList.h"
