@@ -231,3 +231,16 @@ int countInputCharNumber(void){
     
     return count;
 }
+
+int countInputCharNumber2(void){
+    //这行代码如果不添加，在Xcode控制台输入字符，不显示
+    printf("请输入字符 按回车键结束：\n");
+    
+    int count=0;
+    while (getchar()!='\n') {
+        count++;
+    }
+    printf("count = %d\n",count);
+    return count;
+
+}

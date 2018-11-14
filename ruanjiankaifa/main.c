@@ -46,7 +46,9 @@ void basicTest(void){
 //    readFileTest();
 //    readFileTest2();
 //    readFileTest3();
-    countInputCharNumber();
+    
+    //countInputCharNumber();
+     countInputCharNumber2();
 }
 
 #pragma mark C语言编程demo

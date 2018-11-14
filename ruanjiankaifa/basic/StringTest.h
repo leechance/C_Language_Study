@@ -176,9 +176,8 @@ int strncmpTest(char *s, char *a);
 
 void strncmpTestDemo(void);
 
-//统计输入字符数
+//统计输入字符数的两种方式1.scanf 2.getchar
 int countInputCharNumber(void);
-
-
+int countInputCharNumber2(void);
  
 #endif 
