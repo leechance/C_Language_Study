@@ -130,13 +130,13 @@
 			isa = PBXGroup;
 			children = (
 				4C35DCD4219AB49D00A84557 /* search.h */,
+				4C35DCD5219AB49D00A84557 /* search.c */,
 				4C2805AF219BD7B7009A9D5E /* LinkList.c */,
 				4C2805AE219BD7B7009A9D5E /* LinkList.h */,
 				4C2805AD219BD7B7009A9D5E /* SeqList.c */,
 				4C2805B0219BD7B8009A9D5E /* SeqList.h */,
 				4C2805B3219BE838009A9D5E /* LinearList.c */,
 				4C2805B4219BE838009A9D5E /* LinearList.h */,
-				4C35DCD5219AB49D00A84557 /* search.c */,
 			);
 			path = ds;
 			sourceTree = "<group>";

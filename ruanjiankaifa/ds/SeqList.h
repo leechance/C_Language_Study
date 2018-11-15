@@ -3,7 +3,29 @@
 //  C数据结构
 //  顺序表
 //  Created by chance on 2017/9/10.
-//  Copyright © 2017年  All rights reserved.
+/*
+ 概述：
+ 1)顺序表的定义就决定了顺序表的操作
+ 方式一：采用数组
+ typedef int DataType;
+ //顺序表元素的形式
+ typedef struct {
+ DataType data[100];
+ int length;
+ }SeqList ;
+ 
+ 方式二：指针
+ 
+ typedef int LinearListNodeValue;
+ //线性表
+ typedef struct {
+ int capacity;//容量
+ int length;//长度
+ LinearListNodeValue * value;//节点数据的指针
+ }LinearList;
+ */
+
+
 
 
 

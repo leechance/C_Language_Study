@@ -222,6 +222,18 @@ void maopaoSort(int*arr,int n){
     //2) 依次比较的个数是  n-1,n-2,n-3......1
     //   理论上需要比较的次数 （1+ n-1）*(n-1)/2=n(n-1)/2
     //   需要交换的次数理论上 n(n-1)/2，但是部分有序的情况下，不需要交换那么多
+    
+    //😡😡😡😡😡😡😡😡😇 第1趟（每一趟排好一个）
+    //😡😡😡😡😡😡😡😇😁 第2趟
+    //😡😡😡😡😡😡😇😁😁
+    //😡😡😡😡😡😇😁😁😁
+    //😡😡😡😡😇😁😁😁😁
+    //😡😡😡😇😁😁😁😁😁
+    //😡😡😇😁😁😁😁😁😁
+    //😡😇😁😁😁😁😁😁😁
+    //😇😁😁😁😁😁😁😁😁
+
+    
     for (int i=0; i<n-1; i++) {
         
         for (int j=0; j<n-i-1; j++) {
@@ -239,7 +251,21 @@ void maopaoSort(int*arr,int n){
 }
 
 //明显减少交换的次数
+//找到最小的，交换，排号
+//😁😡😡😡😡😡😇😡😡 第1趟（每一趟排好一个）
+//😁😁😡😡😡😡😡😇😡 第2趟
+//😁😁😁😡😡😡😡😡😇
+//😁😁😁😁😡😡😡😇😡
+//😁😁😁😁😁😡😡😡😇
+//😁😁😁😁😁😁😡😇😡
+//😁😁😁😁😁😁😁😡😇
+//😁😁😁😁😁😁😁😁😇
+//😁😁😁😁😁😁😁😁😁
+
 void selectSort(int *a,int n){
+    
+    
+    
     printf("原数组： ");
     fprintf(pFile, "原数组： ");
     printArrayToFile(a, n);
@@ -266,8 +292,42 @@ void selectSort(int *a,int n){
         }
     
 }
+
+//插入排序其实就是整体移动插入排序的过程
+void insertSort(int a[], int len)
+{
+    printf("原数组： ");
+    fprintf(pFile, "原数组： ");
+    printArrayToFile(a, len);
+    for (int i=0; i<len -1; i++) {
+        int temp = a[i+1];
+        //        int j=i;
+        //        while (j>=0 && a[j]>temp) {
+        //            a[j+1]=a[j];
+        //            j--;
+        //        }
+        int j=i;
+        for (; j>=0 && a[j]>temp; j--) {
+            a[j+1]=a[j];
+        }
+        a[j+1]=temp;
+        
+        
+        fprintf(pFile, "第%d遍：",i+1);
+        printArrayToFile(a, len);
+    }
+}
+
 /*
  * 快速排序
+ 快速排序(Quick Sort)使用分治法策略。
+ 它的基本思想是：选择一个基准数，通过一趟排序将要排序的数据分割成独立的两部分；其中一部分的所有数据都比另外一部分的所有数据都要小。然后，再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。
+ 
+ 快速排序流程：
+ (1) 从数列中挑出一个基准值。
+ (2) 将所有比基准值小的摆放在基准前面，所有比基准值大的摆在基准的后面(相同的数可以到任一边)；在这个分区退出之后，该基准就处于数列的中间位置。
+ (3) 递归地把"基准值前面的子数列"和"基准值后面的子数列"进行排序。
+ 
  *
  * 参数说明：
  *     a -- 待排序的数组
@@ -299,29 +359,6 @@ void quick_sort(int a[], int l, int r)
         quick_sort(a, i+1, r); /* 递归调用 */
     }
 }
-void insertSort(int a[], int len)
-{
-    printf("原数组： ");
-    fprintf(pFile, "原数组： ");
-    printArrayToFile(a, len);
-    for (int i=0; i<len -1; i++) {
-        int temp = a[i+1];
-        //        int j=i;
-        //        while (j>=0 && a[j]>temp) {
-        //            a[j+1]=a[j];
-        //            j--;
-        //        }
-        int j=i;
-        for (; j>=0 && a[j]>temp; j--) {
-            a[j+1]=a[j];
-        }
-        a[j+1]=temp;
-        
-        
-        fprintf(pFile, "第%d遍：",i+1);
-        printArrayToFile(a, len);
-    }
-}
 
 void bucketSort(int a[], int n, int max)
 {
@@ -345,7 +382,7 @@ void bucketSort(int a[], int n, int max)
     // 2. 排序
     for (i = 0, j = 0; i < max; i++)
     {
-        while( (buckets[i]--) >0 )
+        while( (buckets[i]--) >0 ) //等同于if(buckets[i]==1) 但是释放了桶空间
             a[j++] = i;
     }
     
@@ -401,6 +438,31 @@ void count_sort(int a[], int n, int exp)
     // 将数据存储到临时数组output[]中
     for (i = n - 1; i >= 0; i--)
     {
+        //接着是根据桶数组buckets[]来进行排序。假设将排序后的数组存在output[]中；找出output[]和buckets[]之间的联系就可以对数据进行排序了。
+        //http://www.cnblogs.com/skywang12345/p/3603669.html
+        
+        //{53, 3, 542, 748, 14, 214, 154, 63, 616}
+        // buckets 0 1 2 3 4 5 6 7 8 9
+        //         0 0 1 4 7 7 8 8 9 9
+        //exp=1 a[8]=616 (a[i]/exp)%10=6 buckets[6]-1=7 out7=616
+        
+        // buckets 0 1 2 3 4 5 6 7 8 9
+        //         0 0 1 4 7 7 7 8 9 9
+        // a[7]=63      out3=63
+        
+        // buckets 0 1 2 3 4 5 6 7 8 9
+        //         0 0 1 3 7 7 7 8 9 9
+        // a[6]=154      out6=154
+        
+        // buckets 0 1 2 3 4 5 6 7 8 9
+        //         0 0 1 3 6 7 7 8 9 9
+        // a[5]=214      out5=154
+        
+        // buckets 0 1 2 3 4 5 6 7 8 9
+        //         0 0 1 3 5 7 7 8 9 9
+        //
+     
+        
         output[buckets[ (a[i]/exp)%10 ] - 1] = a[i];
         buckets[ (a[i]/exp)%10 ]--;
     }
@@ -421,7 +483,7 @@ void radix_sort(int a[], int n)
 {
     int exp;    // 指数。当对数组按各位进行排序时，exp=1；按十位进行排序时，exp=10；...
     int max = get_max(a, n);    // 数组a中的最大值
-    
+    // 1322,456,985,39,57,91,10,65,48
     // 从个位开始，对数组a按"指数"进行排序
     for (exp = 1; max/exp > 0; exp *= 10)
         count_sort(a, n, exp);

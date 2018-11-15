@@ -26,9 +26,9 @@ int main(int argc, const char * argv[]) {
 //    studentTest();
 //    studentHandleTest();
 //    stringTest();
-//    arrayTest();
+    arrayTest();
 //    pointerTest();
-    dataStructorTest();
+    //dataStructorTest();
     
     
     return EXIT_SUCCESS;
