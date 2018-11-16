@@ -21,5 +21,6 @@
 #include "search.h"
 #include "LinkList.h"
 #include "SeqList.h"
+#include "SqStack.h"
 
 #endif /* Header_h */
