@@ -283,6 +283,7 @@ void dataStructorTest(void){
 //    testSeqList();
 //    testLinkList();
 //    testSqStack();
-    testDoubleStack();
+//    testDoubleStack();
+    testLinkStack();
     
 }

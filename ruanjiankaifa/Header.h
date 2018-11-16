@@ -23,5 +23,6 @@
 #include "SeqList.h"
 #include "SqStack.h"
 #include "DoubleStack.h"
+#include "LinkStack.h"
 
 #endif /* Header_h */
