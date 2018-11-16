@@ -17,6 +17,8 @@
 		4C5940D9219E5CC7003F0EE6 /* SqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940D8219E5CC7003F0EE6 /* SqStack.c */; };
 		4C5940DC219E611A003F0EE6 /* DoubleStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940DB219E611A003F0EE6 /* DoubleStack.c */; };
 		4C5940DF219E66B9003F0EE6 /* LinkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940DE219E66B9003F0EE6 /* LinkStack.c */; };
+		4C5940E2219E9632003F0EE6 /* SqQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940E1219E9632003F0EE6 /* SqQueue.c */; };
+		4C5940E5219E96B6003F0EE6 /* LinkQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940E4219E96B6003F0EE6 /* LinkQueue.c */; };
 		4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */; };
 		4CE0EB602191210D008CF8BE /* StringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB5F2191210D008CF8BE /* StringTest.c */; };
 		4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6221913281008CF8BE /* PointerTest.c */; };
@@ -67,6 +69,10 @@
 		4C5940DB219E611A003F0EE6 /* DoubleStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleStack.c; sourceTree = "<group>"; };
 		4C5940DD219E66B9003F0EE6 /* LinkStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkStack.h; sourceTree = "<group>"; };
 		4C5940DE219E66B9003F0EE6 /* LinkStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkStack.c; sourceTree = "<group>"; };
+		4C5940E0219E9632003F0EE6 /* SqQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqQueue.h; sourceTree = "<group>"; };
+		4C5940E1219E9632003F0EE6 /* SqQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SqQueue.c; sourceTree = "<group>"; };
+		4C5940E3219E96B6003F0EE6 /* LinkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkQueue.h; sourceTree = "<group>"; };
+		4C5940E4219E96B6003F0EE6 /* LinkQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkQueue.c; sourceTree = "<group>"; };
 		4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLanguageDemo.h; sourceTree = "<group>"; };
 		4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLanguageDemo.c; sourceTree = "<group>"; };
 		4CE0EB5E2191210D008CF8BE /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
@@ -152,6 +158,10 @@
 				4C5940DB219E611A003F0EE6 /* DoubleStack.c */,
 				4C5940DD219E66B9003F0EE6 /* LinkStack.h */,
 				4C5940DE219E66B9003F0EE6 /* LinkStack.c */,
+				4C5940E0219E9632003F0EE6 /* SqQueue.h */,
+				4C5940E1219E9632003F0EE6 /* SqQueue.c */,
+				4C5940E3219E96B6003F0EE6 /* LinkQueue.h */,
+				4C5940E4219E96B6003F0EE6 /* LinkQueue.c */,
 			);
 			path = ds;
 			sourceTree = "<group>";
@@ -255,6 +265,8 @@
 				4CE0EB722193DBF3008CF8BE /* StaticTest.c in Sources */,
 				4C2805B1219BD7B8009A9D5E /* SeqList.c in Sources */,
 				4C4F712E218FF8B700838473 /* Exam.c in Sources */,
+				4C5940E2219E9632003F0EE6 /* SqQueue.c in Sources */,
+				4C5940E5219E96B6003F0EE6 /* LinkQueue.c in Sources */,
 				4CE0EB602191210D008CF8BE /* StringTest.c in Sources */,
 				4C4F7122218FD63700838473 /* main.c in Sources */,
 				4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */,

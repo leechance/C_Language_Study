@@ -284,6 +284,8 @@ void dataStructorTest(void){
 //    testLinkList();
 //    testSqStack();
 //    testDoubleStack();
-    testLinkStack();
+//    testLinkStack();
+//    testSqQueue();
+      testLinkQueue();
     
 }

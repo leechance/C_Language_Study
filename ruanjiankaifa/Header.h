@@ -24,5 +24,7 @@
 #include "SqStack.h"
 #include "DoubleStack.h"
 #include "LinkStack.h"
+#include "SqQueue.h"
+#include "LinkQueue.h"
 
 #endif /* Header_h */
