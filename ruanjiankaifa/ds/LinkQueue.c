@@ -165,9 +165,9 @@ void testLinkQueue(void){
         printf("成功地构造了一个空队列!\n");
     printf("是否空队列？%d(1:空 0:否)  ",lq_QueueEmpty(q));
     printf("队列的长度为%d\n",lq_QueueLength(q));
-    sq_EnQueue(&q,-5);
-    sq_EnQueue(&q,5);
-    sq_EnQueue(&q,10);
+    lq_EnQueue(&q,-5);
+    lq_EnQueue(&q,5);
+    lq_EnQueue(&q,10);
     printf("插入3个元素(-5,5,10)后,队列的长度为%d\n",lq_QueueLength(q));
     printf("是否空队列？%d(1:空 0:否)  ",lq_QueueEmpty(q));
     printf("队列的元素依次为：");
