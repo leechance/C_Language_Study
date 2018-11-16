@@ -163,11 +163,11 @@ void arrayTest(void){
     int *a =initArrayWithRandFunc(LENGTH, RANGE);
     //maopaoSort(a, LENGTH);
     //selectSort(a, LENGTH);
-    //insertSort(a,LENGTH);
+    insertSort(a,LENGTH);
     
     
      //桶排序
-    bucketSort(a, LENGTH, RANGE);
+   // bucketSort(a, LENGTH, RANGE);
     
     
     //顺序查找
