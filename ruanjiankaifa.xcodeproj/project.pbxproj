@@ -15,6 +15,7 @@
 		4C4F712B218FF74F00838473 /* BasicTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712A218FF74F00838473 /* BasicTest.c */; };
 		4C4F712E218FF8B700838473 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F712D218FF8B700838473 /* Exam.c */; };
 		4C5940D9219E5CC7003F0EE6 /* SqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940D8219E5CC7003F0EE6 /* SqStack.c */; };
+		4C5940DC219E611A003F0EE6 /* DoubleStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5940DB219E611A003F0EE6 /* DoubleStack.c */; };
 		4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */; };
 		4CE0EB602191210D008CF8BE /* StringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB5F2191210D008CF8BE /* StringTest.c */; };
 		4CE0EB6321913281008CF8BE /* PointerTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0EB6221913281008CF8BE /* PointerTest.c */; };
@@ -61,6 +62,8 @@
 		4C4F712D218FF8B700838473 /* Exam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exam.c; sourceTree = "<group>"; };
 		4C5940D7219E5CC7003F0EE6 /* SqStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqStack.h; sourceTree = "<group>"; };
 		4C5940D8219E5CC7003F0EE6 /* SqStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SqStack.c; sourceTree = "<group>"; };
+		4C5940DA219E611A003F0EE6 /* DoubleStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleStack.h; sourceTree = "<group>"; };
+		4C5940DB219E611A003F0EE6 /* DoubleStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleStack.c; sourceTree = "<group>"; };
 		4CE0EAFF21900F96008CF8BE /* CLanguageDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLanguageDemo.h; sourceTree = "<group>"; };
 		4CE0EB0021900F96008CF8BE /* CLanguageDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLanguageDemo.c; sourceTree = "<group>"; };
 		4CE0EB5E2191210D008CF8BE /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				4C2805B4219BE838009A9D5E /* LinearList.h */,
 				4C5940D7219E5CC7003F0EE6 /* SqStack.h */,
 				4C5940D8219E5CC7003F0EE6 /* SqStack.c */,
+				4C5940DA219E611A003F0EE6 /* DoubleStack.h */,
+				4C5940DB219E611A003F0EE6 /* DoubleStack.c */,
 			);
 			path = ds;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				4CE0EB6F2193DAE7008CF8BE /* MemoryTest.c in Sources */,
 				4CE0EB0121900F96008CF8BE /* CLanguageDemo.c in Sources */,
 				4C4F712B218FF74F00838473 /* BasicTest.c in Sources */,
+				4C5940DC219E611A003F0EE6 /* DoubleStack.c in Sources */,
 				4C2805B2219BD7B8009A9D5E /* LinkList.c in Sources */,
 				4C5940D9219E5CC7003F0EE6 /* SqStack.c in Sources */,
 				4C35DCD6219AB49D00A84557 /* search.c in Sources */,

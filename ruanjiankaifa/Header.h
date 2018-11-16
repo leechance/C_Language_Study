@@ -22,5 +22,6 @@
 #include "LinkList.h"
 #include "SeqList.h"
 #include "SqStack.h"
+#include "DoubleStack.h"
 
 #endif /* Header_h */
