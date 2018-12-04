@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
     dataStructorTest();
     
     
-    return EXIT_SUCCESS;
+    return 0;
 }
 
 #pragma mark 基础测试
@@ -286,6 +286,7 @@ void dataStructorTest(void){
 //    testDoubleStack();
 //    testLinkStack();
 //    testSqQueue();
-      testLinkQueue();
+//      testLinkQueue();
+    testBitree();
     
 }
