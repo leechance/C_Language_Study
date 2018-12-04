@@ -26,5 +26,6 @@
 #include "ds/SqQueue.h"
 #include "ds/LinkQueue.h"
 #include "ds/BiTree.h"
+#include "basic/Faceoffer.h"
 
 #endif /* Header_h */

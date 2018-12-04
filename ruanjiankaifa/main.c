@@ -15,6 +15,8 @@ void arrayTest(void);
 void DemoTest(void);
 void pointerTest(void);
 void dataStructorTest(void);
+void faceOffer(void);
+
 
 #pragma mark 程序入口
 int main(int argc, const char * argv[]) {
@@ -28,10 +30,15 @@ int main(int argc, const char * argv[]) {
 //    stringTest();
 //    arrayTest();
 //    pointerTest();
-    dataStructorTest();
+//    dataStructorTest();
+    faceOffer();
     
     
     return 0;
+}
+
+void faceOffer(void){
+    dataWidthForBigNum();
 }
 
 #pragma mark 基础测试
